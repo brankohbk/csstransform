@@ -1,0 +1,121 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  height: 100vh;
+
+}
+
+footer {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+}
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: filter 0.4s,  color .4s;
+}
+footer a:hover {
+  color: black;
+  filter: drop-shadow(0 0 15px rgb(251, 255, 0));
+}
+
+footer span {
+  margin-left: 1rem;
+}
+
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #aaaaaa;
+  flex-wrap: wrap;
+}
+.selectores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 330px;
+  width: 30%;
+  box-shadow: 0 0 10px -4px purple;
+  margin: 1rem 0 ;
+  font-size: 30px;
+}
+.botonera{
+
+}
+.botonera button{
+  flex: 1;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+.especial{
+  background-color: cadetblue;
+  color: aliceblue;
+  box-shadow: 0 0 10px -4px rgb(255, 0, 0);
+}
+.playground{
+  perspective: 100000px;
+  position: relative;
+  height: 80vh;
+  flex: 1;
+  background-color: blueviolet;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.cubo{
+  transition:transform .8s ease-out;
+  --grados-x : 0deg;
+  --grados-y : 0deg;
+  --grados-z : 0deg;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: left;
+  transform: rotateX(var(--grados-x)) rotateY(var(--grados-y)) rotateZ(var(--grados-z));
+  width: 200px;
+  height: 200px;
+}
+.lado{
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 0 3px black inset;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.izquierdo{
+background-color: aquamarine;
+transform: rotateY(-90deg) translateX(-100%);
+transform-origin: left;
+}
+
+.centro{
+  background-color: rgb(255, 217, 0);
+}
+
+.derecho{
+  transform-origin: right;
+  transform: rotateY(90deg) translateX(100%);
+  background-color: rgb(36, 253, 83);
+}
+.arriba{
+  background-color: rgb(36, 166, 253);
+  transform: rotateX(90deg) translateY(-100%);
+  transform-origin: top;
+}

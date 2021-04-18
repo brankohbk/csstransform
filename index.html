@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="selectores">
+          <p>Eje X <span id="grados-x">0</span>°</p>
+          <input
+            type="range"
+            name="range-x"
+            id="range-x"
+            step="5"
+            min="-360"
+            max="360"
+            value="0"
+            data-eje="x"
+          />
+          <div class="container botonera">
+            <button class="especial" onClick="girar('x','-90')">-90</button>
+            <button onClick="girar('x','-45')">-45</button>
+            <button onClick="girar('x','-30')">-30</button>
+            <button onClick="girar('x','0')">0</button>
+            <button onClick="girar('x','30')">30</button>
+            <button onClick="girar('x','45')">+45</button>
+            <button class="especial" onClick="girar('x','90')">90</button>
+          </div>
+        </div>
+        <div class="selectores">
+          <p>Eje Y <span id="grados-y">0</span>°</p>
+          <input
+            type="range"
+            name="range-y"
+            id="range-y"
+            step="5"
+            min="-360"
+            max="360"
+            value="0"
+            data-eje="y"
+          />
+          <div class="container botonera">
+            <button class="especial" onClick="girar('y','-90')">-90</button>
+            <button onClick="girar('y','-45')">-45</button>
+            <button onClick="girar('y','-30')">-30</button>
+            <button onClick="girar('y','0')">0</button>
+            <button onClick="girar('y','30')">30</button>
+            <button onClick="girar('y','45')">+45</button>
+            <button class="especial" onClick="girar('y','90')">90</button>
+          </div>
+        </div>
+        <div class="selectores">
+          <p>Eje Z <span id="grados-z">0</span>°</p>
+          <input
+            type="range"
+            name="range-z"
+            id="range-z"
+            step="5"
+            min="-360"
+            max="360"
+            value="0"
+            data-eje="z"
+          />
+          <div class="container botonera">
+            <button onClick="girar('z','-90')">-90</button>
+            <button onClick="girar('z','-45')">-45</button>
+            <button onClick="girar('z','-30')">-30</button>
+            <button onClick="girar('z','0')">0</button>
+            <button onClick="girar('z','30')">30</button>
+            <button onClick="girar('z','45')">+45</button>
+            <button onClick="girar('z','90')">90</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="playground">
+        <div class="cubo">
+          <div class="lado izquierdo"><p>Lorem, ipsum dolor.</p><p>IZQUIERDA</p></div>
+          <div class="lado centro"><p>Lorem, ipsum dolor.</p><p>CENTRO</p></div>
+          <div class="lado derecho"><p>Lorem, ipsum dolor.</p><p>DERECHA</p></div>
+          <div class="lado arriba"><p>Lorem, ipsum dolor.</p><p>ARRIBA</p></div>
+        </div>
+      </div>
+      <footer>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          title="🤓 Source code & Readme"
+          href="http://www.github.com/brankohbk/csstransform"
+        >
+          <img src="./assets/GitHub-Mark-32px.png" alt="GithubLogo" />
+          <span> Branko Haberkon - 2021 </span>
+        </a>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
